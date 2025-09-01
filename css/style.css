@@ -1,0 +1,510 @@
+/* fontes */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html {
+    scroll-behavior: smooth; /* Ativa rolagem suave */
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    color: black;
+    background-color: #f9f9f9;
+    padding-top: 80px; 
+    
+}
+.ftLogo{
+    display: flex;
+    align-items: center;
+    padding: 18px;
+    width: 100%;
+}
+.navegacao {
+    padding: 10px 30px; 
+    height: 60px; 
+    background-color: white; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+
+
+.navegacao .logo{
+
+    font-size: 17px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.navegacao .menu {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+.navegacao .perfil {
+    display: flex;
+    justify-items: flex-end;
+    align-items: center;
+    gap: 1rem;
+}
+.navegacao .perfil .entre {
+    text-align: center;
+    margin-left: 20px;
+    background-color: #3E7FFF;
+    border-radius: 12px;
+    width: 120px;
+    height: 30px;
+    line-height: 30px; 
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.navegacao .perfil .entre:hover {
+    background-color: #ddf557;
+}
+
+.navegacao .perfil .registre {
+    text-align: center;
+    background-color: #F08EBD;
+    border-radius: 12px;
+    width: 120px;
+    height: 30px;
+    line-height: 30px; /* Centraliza o texto verticalmente */
+    color: white;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.navegacao .perfil .registre:hover {
+    background-color: #D870A6;
+}
+
+.navegacao ul li a {
+    font-size: 15px;
+    font-weight: 600;
+    color: #333;
+    transition: all 0.3s;
+}
+/* animação de colocar o mouse em cima do btn da navbar */
+.navegacao ul li a:hover {
+    color: #0A74DA; /* Cor ao passar o mouse */
+}
+
+/* css do primeiro conteúdo da página */
+.home{
+    margin: auto;
+    align-items: center;
+    max-width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+.home .hometext{
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.home .hometext .apps{
+    display: flex;
+    justify-content: center;
+}
+.entrar{
+    display: flex;
+    justify-content: center;
+}
+.btn-entrar {
+    margin-top: 5px;
+    background-color: black;
+    color: white; 
+    border: none;
+    padding: 5px 115px;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-entrar:hover {
+    background-color: #575656;
+}
+/* CSS das funções */
+/* Seção de quadrados azuis com círculos brancos e fundo azul claro */
+.features {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    background-color: #A8DBF8; /* Fundo azul claro */
+    padding: 50px 0; 
+    text-align: center;
+    position: relative; /* Necessário para posicionar os quadrados absolutos */
+    z-index: 1; /* Mantém a seção acima de outras */
+}
+
+/* Contêiner para os quadrados */
+.feature-container {
+    display: flex; /* Exibe os quadrados na horizontal */
+    justify-content: center; /* Centraliza os quadrados */
+    gap: 1rem; /* Espaçamento entre os quadrados */
+    position: relative; /* Necessário para posicionar os quadrados absolutos */
+    z-index: 2; /* Mantém os quadrados acima do fundo azul */
+}
+
+/* Estilo para todos os quadrados */
+.feature-item {
+    background-color: #53C6F0; 
+    border-radius: 10px;
+    padding: 20px;
+    width: 180px; 
+    height: 250px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    position: relative; 
+    margin-top: -100px; /* Ajuste para sobrepor ao fundo branco */
+    z-index: 3; /* Mantém os quadrados acima de tudo */
+}
+
+.feature-item p {
+    margin-top: 10px;
+    font-size: 0.8rem; 
+    font-weight: 500;
+    text-align: center; 
+}
+
+/* Estilo para os círculos brancos */
+.circle {
+    background-color: white;
+    border-radius: 60%;
+    width: 95px; 
+    height: 95px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.circle img {
+    width: 75%; 
+    height: 75%; 
+    object-fit: contain;
+}
+
+/* Estilo para a descrição */
+.description {
+    background-color: #A8DBF8; /* Fundo azul claro para a descrição */
+    color: black; /* Cor do texto */
+    padding: 20px; 
+    text-align: center; 
+    font-size: 1rem; 
+    margin-top: 20px; 
+    width: 30%; 
+    z-index: 0; 
+    font-weight: bolder;
+    font-family: 'Poppins', sans-serif;
+}
+.team {
+    padding: 50px 0; /* Espaçamento na seção */
+    text-align: center; /* Centraliza o título */
+    background-color: #f9f9f9; /* Fundo claro para a seção */
+}
+
+.team h2 {
+    font-size: 2rem; /* Tamanho do título */
+    margin-bottom: 30px; /* Espaçamento abaixo do título */
+}
+
+.team-member {
+    display: flex; /* Permite o alinhamento em linha */
+    justify-content: center; /* Centraliza os membros do time */
+    align-items: center; /* Alinha verticalmente */
+    margin: 20px 0; /* Espaçamento entre os membros */
+    max-width: 800px; /* Largura máxima para centralizar */
+    margin-left: auto; /* Centraliza horizontalmente */
+    margin-right: auto; /* Centraliza horizontalmente */
+}
+
+.member-info {
+    display: flex; /* Para alinhar a foto e a descrição */
+    align-items: center; /* Centraliza verticalmente */
+    width: 100%; /* Ocupará toda a largura disponível */
+}
+
+.member-info.left {
+    flex-direction: row; /* Foto à esquerda e descrição à direita */
+}
+
+.member-info.right {
+    flex-direction: row-reverse; /* Foto à direita e descrição à esquerda */
+}
+
+.member-photo {
+    width: 200px; /* Tamanho da foto */
+    height: 200px; /* Altura da foto */
+    border-radius: 50%; /* Torna a foto circular */
+    margin: 0 10px; /* Espaçamento entre a foto e a descrição */
+}
+.description1 {
+    background-color: #53C6F0;
+    max-width: 600px; /* Largura máxima da descrição */
+    text-align: left; /* Alinha o texto à esquerda */
+    margin: 0 10px; /* Margem nas laterais da descrição */
+    padding: 10px; /* Padding para espaçamento interno */
+    border-radius: 8px; /* Bordas arredondadas para a descrição */
+}
+.description2 {
+    background-color: #F08EBD;
+    max-width: 600px; /* Largura máxima da descrição */
+    text-align: left; /* Alinha o texto à esquerda */
+    margin: 0 10px; /* Margem nas laterais da descrição */
+    padding: 10px; /* Padding para espaçamento interno */
+    border-radius: 8px; /* Bordas arredondadas para a descrição */
+}
+/* CSS do APP*/
+.appsSection{
+    z-index: 1;
+}
+.fundo{
+    background-color: #A8DBF8;
+    z-index: 0;
+    height: 80%;
+    width: 100%;
+    position: absolute;
+    transform:translateY(10%);
+}
+.UseApp{
+    align-items: center;
+    display: flex;
+    justify-content: space-around;   
+    position: relative;
+}
+
+.useText{
+    text-align: left;
+}
+
+
+/* CSS do formulário */
+.formularios{
+    display: flex;
+    justify-content: center;
+    gap: 20px; 
+    z-index: 1;
+}
+.form01{    
+    text-align: center;
+    box-sizing: border-box;
+    padding: 30px;
+    background-color: #B6DF84;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);;
+}
+.form01 .infoCliente #name{
+    margin-top: 10px;
+    padding: 3px;
+    border: none;
+    background-color: #F08EBD;
+    border-radius: 10px;
+}
+.form01 .infoCliente #email{
+    padding: 3px;
+    border: none;
+    background-color: #F08EBD;
+    border-radius: 10px;
+}
+input::placeholder{
+    color: black;
+}
+textarea::placeholder{
+    color: black;
+}
+.form01 #mensagem{
+    margin-top: 10px;
+    padding: 5px;
+    width: 350px;
+    height: 80px;
+    border: none;
+    background-color: #F08EBD;
+    border-radius: 10px;
+}
+#btn{
+    color: white;
+    margin-top: 5px;
+    padding: 5px;
+    width: 350px;
+    border-radius: 10px;
+    border: none;
+    background-color: #3E7FFF;
+    transition: all 0.5s;
+}
+#btn:hover{
+    background-color: #0338a3;
+}
+.form02{
+    text-align: center;
+    box-sizing: border-box;
+    padding: 50px;
+    background-color: #B6DF84;
+    border-radius: 10px;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);;
+}
+.form02 #email{
+    padding: 3px;
+    border: none;
+    background-color: #F08EBD;
+    border-radius: 10px;
+    width: 350px;
+}
+#btn2{
+    color: white;
+    margin-top: 5px;
+    padding: 5px;
+    width: 350px;
+    border-radius: 10px;
+    border: none;
+    background-color: #3E7FFF;
+    transition: all 0.5s;
+}
+#btn2:hover{
+    background-color: #0338a3;
+}
+.linkMap:visited {
+    color: inherit;   /* Mantém a cor do link como o texto normal */
+    text-decoration: none; /* Remove o sublinhado */
+}
+
+/* Remove o estilo de link clicado ou em foco */
+linkMap:active,
+LinkMap:focus {
+    outline: none; /* Remove a borda de foco (quando o link é clicado) */
+    text-decoration: none; /* Remove o sublinhado ao clicar */
+    color: inherit; /* Mantém a cor como o texto normal */
+}
+
+.photo-container {
+    display: flex;
+    flex-direction: column; /* verticaliza foto + ícones */
+    align-items: center;    /* centraliza */
+}
+
+.social-links {
+    display: flex;
+    gap: 10px;      /* espaço entre os ícones */
+    margin-top: 8px; /* distância da foto */
+}
+
+.social-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.social-icon:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 8px rgba(0,0,0,0.3);
+}
+.footer {
+    position: fixed;       /* Fixa o footer na tela */
+    bottom: 0;             /* Na parte inferior */
+    left: 0;               /* Começo da tela */
+    width: 100%;           /* Ocupa toda a largura */
+    background-color: #1a1a1a;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 14px;
+    z-index: 10000;        /* Sempre acima do restante do conteúdo */
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.3);
+}
+
+.footer .social-icons {
+    margin-top: 5px;
+}
+
+.footer .social-icons a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 15px;
+    transition: color 0.3s;
+}
+
+.footer .social-icons a:hover {
+    color: #00bcd4; /* Azul suave no hover */
+}
+
+
+@media screen and (max-width: 900px) {
+    .home{
+        flex-direction: column;
+        text-align: center;
+    }
+    .home .hometext{
+        font-size: 20px;
+    }
+    .feature-container {
+        flex-direction: column;
+    }
+    .team-member {
+        flex-direction: column;
+    }
+    .member-info.left, .member-info.right {
+        flex-direction: column !important;
+        text-align: center;
+    }
+    .member-photo {
+        margin: 10px 0;
+    }
+    .description1, .description2 {
+        max-width: 90%;
+        margin: 10px auto;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .navegacao .menu {
+        display: none;
+        flex-direction: column;
+    }
+    .navbar-toggle {
+        display: flex;
+    }
+    .apps .entrar, .btn-entrar {
+        width: 80%;
+        padding: 5px 0;
+    }
+    .apps img {
+        width: 120px;
+        height: auto;
+    }
+    .formularios {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .form01, .form02 {
+        width: 90%;
+        padding: 20px;
+    }
+    .form01 #mensagem, .form01 #name, .form01 #email, .form02 #email, #btn, #btn2 {
+        width: 100%;
+    }
+}
