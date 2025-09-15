@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.control{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80%;
+    width: 80%;
+    margin: 0 auto; 
+    gap: 100px;
+}
+.logoCompleta{
+    display: flex;
+}
+.logo{
+    height: 60px;
+}
+.funcoesNavBar{
+    display: flex;
+
+    justify-content: space-around;
+}
+.chamada{
+    font-size: 28px;
+}
+.remedio{
+    display: flex;
+    justify-content: space-around;
+    font-family: "poppins", sans-serif;
+}
+.controlGeral{
+    display: grid;
+    justify-content: center;
+    background-color: #18A0FB;
+    border-radius: 24px;
+    padding: 25px;
+    width: 40vw;
+    height: 40vw;
+    
+}
+.cabecalhoRemedio{
+    text-align: center;
+}
+.dataNota{
+    width: 10vw;
+    height: 2vw;
+}
+.textoNota{
+    background-color: #A3D9FD;
+    border: none;
+    width: 35vw;
+    height: 25vw;
+    outline: none;
+}
+.textoNota::placeholder{
+    color: black;
+    font-family: "poppins";
+}
+.footerRemedio{
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+.btnSalvamentoRemedio{
+    background-color: #7A66FF;
+    border: none;
+    border-radius: 12px;
+    height: 25px;
+    width: 35vw;
+}
+
+/* remedio */
+#fundoTextoRemedio{
+    background-color: #A3D9FD;
+    border-radius: 24px;
+    padding: 20px;
+    width: 35vw;
+    height: 5vw;
+    display: flex;
+}
+#textoRemedio{
+    font-family: "poppins";
+    display: grid;
+}
