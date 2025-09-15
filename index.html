@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="Pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,31 +10,29 @@
     <link rel="shortcut icon" href="img/Logo Conexão Autista 2.png" type="image/x-icon">
     <title>Conexão Autista</title>
 
-    <!--Biblioteca de ícones -->
+    <!-- Biblioteca de ícones -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-
 </head>
 
 <body>
     <header>
         <nav class="navegacao">
-
             <div class="ftLogo">
                 <img src="img/Logo Conexão Autista 2.png" alt="">
                 <a href="#" class="logo">CONEXÃO AUTISTA</a>
             </div>
+
+            <div class="hamburger" id="hamburger">☰</div>
 
             <ul class="menu">
                 <li class="navItem"><a class="linkMap" href="#">Introdução</a></li>
                 <li class="navItem"><a class="linkMap" href="#features">Serviços</a></li>
                 <li class="navItem"><a class="linkMap" href="#nosso-time">Nosso Time</a></li>
                 <li class="navItem"><a class="linkMap" href="#comece-usar">Comece a Usar</a></li>
-                
-        
+            </ul>
         </nav>
-
-        
     </header>
+
     <main>
         <section class="home">
             <div class="hometext">
@@ -54,75 +51,102 @@
         </section>
 
         <br>
-        <br>
-        <br>
-        <br>
-        <br>
 
-        <section class="features" id="features">
-            <div class="feature-container">
-                <div class="feature-item">
-                    <div class="circle">
-                        <img src="img/notebook 1.png" alt="Icone 1">
-                    </div>
-                    <p>Agenda com seus compromissos e históricos médicos organizados.</p>
-                </div>
+       
+<section class="features" id="features">
+  <div class="carousel">
+    <!-- Faixa onde ficam os slides -->
+    <div class="carousel-track">
 
-                <div class="feature-item">
-                    <div class="circle">
-                        <img src="img/medicine 1.png" alt="Icone 2">
-                    </div>
-                    <p> Horários, reações
-                        adversas e bulas dos
-                        seus remédios</p>
-                </div>
+      <div class="carousel-item">
+        <div class="feature-item slide">
+          <div class="circle">
+            <img src="img/notebook 1.png" alt="Agenda">
+          </div>
+          <p>Agenda com seus compromissos e históricos médicos organizados.</p>
+        </div>
+      </div>
 
-                <div class="feature-item">
-                    <div class="circle">
-                        <img src="img/medical-team 1.png" alt="Icone 3">
-                    </div>
-                    <p>Encontre atendimento
-                        para a especialidade que
-                        você precisa, na sua
-                        região</p>
-                </div>
+      <div class="carousel-item">
+        <div class="feature-item slide">
+          <div class="circle">
+            <img src="img/laudo.png" alt="Laudos">
+          </div>
+          <p>Guarde todos seus exames em um só lugar.</p>
+        </div>
+      </div>
 
-                <div class="feature-item feature-item-light">
-                    <div class="circle">
-                        <img src="img/compliant 1.png" alt="Icone 4">
-                    </div>
-                    <p> Orientações, leis e
-                        direitos em um só lugar</p>
-                </div>
-            </div>
+      <div class="carousel-item">
+        <div class="feature-item slide">
+          <div class="circle">
+            <img src="img/medicine 1.png" alt="Medicamentos">
+          </div>
+          <p>Horários, reações adversas e bulas dos seus remédios.</p>
+        </div>
+      </div>
 
+      <div class="carousel-item">
+        <div class="feature-item slide">
+          <div class="circle">
+            <img src="img/medical-team 1.png" alt="Especialistas">
+          </div>
+          <p>Encontre atendimento para a especialidade que você precisa, na sua região.</p>
+        </div>
+      </div>
 
-            <div class="description">
-                <p>Toda a sua rotina, medicações, compromissos e
-                    históricos em um só lugar. Diga adeus a sobrecarga
-                    mental e olá a praticidade e organização</p>
-            </div>
-            <div class="apps">
-                <img src="img/googlePlay.png" alt="">
-                <img src="img/appStore.png" alt="">
-            </div>
-            <div class="entrar">
-                <button class="btn-entrar">Entrar</button>
-            </div>
-        </section>
+      <div class="carousel-item">
+        <div class="feature-item slide">
+          <div class="circle">
+            <img src="img/compliant 1.png" alt="Direitos">
+          </div>
+          <p>Orientações, leis e direitos em um só lugar.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Botões -->
+    <button class="carousel-button prev">&#10094;</button>
+    <button class="carousel-button next">&#10095;</button>
+  </div>
+  
+
+    <!-- Texto abaixo do carrossel -->
+  <div class="description">
+    <p>
+      Toda a sua rotina, medicações, compromissos e históricos em um só lugar.  
+      Diga adeus à sobrecarga mental e olá à praticidade e organização.
+    </p>
+  </div>
+
+  <!-- Botões de app -->
+  <div class="apps">
+    <img src="img/googlePlay.png" alt="Google Play">
+    <img src="img/appStore.png" alt="App Store">
+  </div>
+
+  <!-- Botão Entrar -->
+ <div class="entrarApp">
+       <button class="btn-entrar" id="btn-download">Entrar</button>
+  </div>
+</section>
+
+        <!-- =========================
+             NOSSO TIME (mantive seu conteúdo)
+             ========================= -->
         <section class="team" id="nosso-time">
             <h2>Conheça Nosso Time</h2>
-        
+
             <!-- Davi -->
             <div class="team-member">
                 <div class="member-info left">
                     <div class="photo-container">
                         <img src="img/davi 1.png" alt="Integrante 1" class="member-photo">
                         <div class="social-links">
-                            <a href="www.linkedin.com/in/davi-barbosa-nunes-b990972a1" target="_blank">
+                            <a href="https://www.linkedin.com/in/davi-barbosa-nunes-b990972a1" target="_blank">
                                 <img src="img/linkedin-icon.png" alt="LinkedIn" class="social-icon">
                             </a>
-                            <a href="" target="_blank">
+                            <a href="#" target="_blank">
                                 <img src="img/instagram-icon.png" alt="Instagram" class="social-icon">
                             </a>
                             <a href="https://github.com/Braz4BR" target="_blank">
@@ -139,32 +163,34 @@
                     </div>
                 </div>
             </div>
-         <!-- Priscila -->
-         <div class="team-member">
-            <div class="member-info right">
-                <div class="photo-container">
-                    <img src="img/Pricisila.png" alt="Integrante 2" class="member-photo">
-                    <div class="social-links">
-                        <a href="https://www.linkedin.com/in/priscila-romano-7774611b" target="_blank">
-                            <img src="img/linkedin-icon.png" alt="LinkedIn" class="social-icon">
-                        </a>
-                        <a href="https://www.instagram.com/pri.romano?igsh=MW5yMmxoejEyc28xZg==" target="_blank">
-                            <img src="img/instagram-icon.png" alt="Instagram" class="social-icon">
-                        </a>
-                        <a href="https://github.com/PriRomano" target="_blank">
-                            <img src="img/github-icon.png" alt="Github" class="social-icon">
-                        </a>
+
+            <!-- Priscila -->
+            <div class="team-member">
+                <div class="member-info right">
+                    <div class="photo-container">
+                        <img src="img/Pricisila.png" alt="Integrante 2" class="member-photo">
+                        <div class="social-links">
+                            <a href="https://www.linkedin.com/in/priscila-romano-7774611b" target="_blank">
+                                <img src="img/linkedin-icon.png" alt="LinkedIn" class="social-icon">
+                            </a>
+                            <a href="https://www.instagram.com/pri.romano" target="_blank">
+                                <img src="img/instagram-icon.png" alt="Instagram" class="social-icon">
+                            </a>
+                            <a href="https://github.com/PriRomano" target="_blank">
+                                <img src="img/github-icon.png" alt="Github" class="social-icon">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="description2">
+                        <h3>Priscila Romano</h3>
+                        <p>
+                            Hello, Hello!!! Sou a Priscila, estudante de TI encantada pelas áreas de Produto e experiência do usuário.
+                             Gosto de criar experiencias digitais bonitas, úteis e fáceis de serem usadas. Para mim a tecnologia tem que ajudar as pessoas, tornar a vida delas mais prática.
+                             E é exatamente isso que o Conexão Autista faz, traz praticidade e organização para a rotina, as vezes tão puxada, da família do autista..</p>
                     </div>
                 </div>
-                <div class="description2">
-                    <h3>Priscila Romano</h3>
-                    <p>
-                        Hello, Hello!!! Sou a Priscila, estudante de TI encantada pelas áreas de Produto e experiência do usuário.
-                         Gosto de criar experiencias digitais bonitas, úteis e fáceis de serem usadas. Para mim a tecnologia tem que ajudar as pessoas, tornar a vida delas mais prática.
-                         E é exatamente isso que o Conexão Autista faz, traz praticidade e organização para a rotina, as vezes tão puxada, da família do autista..</p>
-                </div>
             </div>
-        </div>
+
             <!-- Higor -->
             <div class="team-member">
                 <div class="member-info left">
@@ -191,45 +217,43 @@
                     </div>
                 </div>
             </div>
-        
-           
-        
+
             <!-- Renata -->
             <div class="team-member">
                 <div class="member-info right">
                     <div class="photo-container">
                         <img src="img/Renata.png" alt="Integrante 4" class="member-photo">
                         <div class="social-links">
-                            <a href="https://www.linkedin.com/in/renata" target="_blank">
+                            <a href="https://www.linkedin.com/in/renata-andrade-16620a28b" target="_blank">
                                 <img src="img/linkedin-icon.png" alt="LinkedIn" class="social-icon">
                             </a>
-                            <a href="https://www.instagram.com/renata" target="_blank">
+                            <a href="https://www.instagram.com/renathaa93" target="_blank">
                                 <img src="img/instagram-icon.png" alt="Instagram" class="social-icon">
                             </a>
-                            <a href="https://github.com/Braz4BR" target="_blank">
+                            <a href="https://github.com/TrytoBeaDEV" target="_blank">
                                 <img src="img/github-icon.png" alt="Github" class="social-icon">
                             </a>
                         </div>
                     </div>
                     <div class="description2">
                         <h3>Renata Andrade</h3>
-                        <p>lá, sou a Renata mãe de uma criança autista 💙 e sei, na pele, os desafios e as conquistas diárias de uma família atípica. 
+                        <p>Olá, sou a Renata mãe de uma criança autista 💙 e sei, na pele, os desafios e as conquistas diárias de uma família atípica. 
                             Minha paixão pela tecnologia me trouxe até aqui: transformar essa vivência em uma solução real, que organize, apoie e acolha outras famílias. 
                             Dedico-me a este projeto com o coração e o propósito de fazer diferença. O Conexão Autista é mais do que um trabalho acadêmico: é um sonho que quero ver mudar vidas.</p>
                     </div>
                 </div>
             </div>
-        
+
             <!-- Vitor -->
             <div class="team-member">
                 <div class="member-info left">
                     <div class="photo-container">
                         <img src="img/Vitor.png" alt="Integrante 5" class="member-photo">
                         <div class="social-links">
-                            <a href="https://www.linkedin.com/in/vitor" target="_blank">
+                            <a href="https://br.linkedin.com/in/vitor-rezende-honorio-879b5b2bb" target="_blank">
                                 <img src="img/linkedin-icon.png" alt="LinkedIn" class="social-icon">
                             </a>
-                            <a href="https://www.instagram.com/vitor" target="_blank">
+                            <a href="https://www.instagram.com/sieg.porin" target="_blank">
                                 <img src="img/instagram-icon.png" alt="Instagram" class="social-icon">
                             </a>
                             <a href="https://github.com/Braz4BR" target="_blank">
@@ -248,14 +272,14 @@
                     </div>
                 </div>
             </div>
-        
+
             <!-- João -->
             <div class="team-member">
                 <div class="member-info right">
                     <div class="photo-container">
                         <img src="img/joao-1.jpeg" alt="Integrante 6" class="member-photo">
                         <div class="social-links">
-                            <a href=" https://br.linkedin.com/in/jo%C3%A3o-felipe-santana-de-freitas-916506294" target="_blank">
+                            <a href="https://br.linkedin.com/in/jo%C3%A3o-felipe-santana-de-freitas-916506294" target="_blank">
                                 <img src="img/linkedin-icon.png" alt="LinkedIn" class="social-icon">
                             </a>
                             <a href="https://www.instagram.com/joaolipe_137" target="_blank">
@@ -276,10 +300,9 @@
                     </div>
                 </div>
             </div>
-        
+
         </section>
-        
-    </main>
+    
 
     <section class="appsSection" id="comece-usar">
         <div class="fundo"></div>
@@ -294,40 +317,26 @@
                     <img src="img/appStore.png" alt="">
                 </div>
                 <div class="entrarApp">
-                    <button class="btn-entrar">Entrar</button>
+                    <button class="btn-entrar" id="btn-download">Entrar</button>
                 </div>
             </div>
-            <img src="img/App Conexão Autista 1.png" alt="" class="fotoApp">
+            <img src="img/App Conexão Autista 1.png" alt="Imagem final" class="imagem-final">
         </div>
     </section>
 
-    <br>
-    <br>
-    <script>
-    Selector('.menu');
-        const toggle = document.getElementById('mobile-menu');
-
-        toggle.addEventListener('click', () => {
-            menu.classList.toggle('active');
-        });
-
-        const btnDownload = document.getElementById('btn-download');
-        btnDownload.addEventListener('click', () => {
-            alert('O aplicativo está em protótipo e será apresentado em breve!');
-        });
-    </script>
-
+    <br><br>
+</main>
+    <footer class="footer">
+        <p>© 2025 Conexão Autista | Todos os direitos reservados</p>
+        <div class="social-icons">
+          <a href="https://www.instagram.com/conexao_autistaa" target="_blank" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://www.linkedin.com/company/conexao-autista" target="_blank" aria-label="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </div>
+    </footer>
+    <script src="app2.js"></script>
 </body>
-<footer class="footer">
-    <p>© 2025 Conexão Autista | Todos os direitos reservados</p>
-    <div class="social-icons">
-      <a href="https://www.instagram.com/conexao_autistaa" target="_blank" aria-label="Instagram">
-        <i class="fab fa-instagram"></i>
-      </a>
-      <a href="https://www.linkedin.com/company/conexao-autista" target="_blank" aria-label="LinkedIn">
-        <i class="fab fa-linkedin"></i>
-      </a>
-    </div>
-  </footer>
-
-  </html>
+</html>
